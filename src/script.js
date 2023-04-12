@@ -27,6 +27,40 @@ let month = months[now.getMonth()];
 
 li.innerHTML = `${day} ${month} ${date}, ${hours}:${minutes}`;
 
+function displayForecast() {
+  let forecastElement = document.querySelector("#forecast");
+
+  let forecastHTML = `<div class="row">`;
+  let days = ["Thu", "Fri", "Sat", "Sun", "Mon", "Tue"];
+  days.forEach(function(day) {
+    forecastHTML = forecastHTML +
+      `
+  
+    <div class="col-2">
+      <div class="forecast-date">
+        ${day}
+        <img
+          src="https://openweathermap.org/img/wn/10d@2x.png"
+          alt=""
+          width="52"
+        />
+      </div>
+
+      <div class="forecast-temp">
+        <span class="forecast-temp-max">
+          <strong>43°</strong>
+        </span>
+        <span class="forecast-temp-min">33°</span>
+      </div>
+    </div>
+  
+  `;
+  })
+  
+  forecastHTML = forecastHTML + `</div>`;
+  forecastElement.innerHTML = forecastHTML;  
+}
+
 function search(event) {
   event.preventDefault();
   let searchInput = document.querySelector("#city-input");
@@ -47,6 +81,7 @@ let currentLocation = document.querySelector("#current-location");
 currentLocation.addEventListener("click", getCurrentLocation);
 
 searchCity("New York");
+displayForecast();
 
 function showTemp(response) {
   document.querySelector("#current-city").innerHTML = response.data.name;

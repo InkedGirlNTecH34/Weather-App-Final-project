@@ -9,20 +9,21 @@
       integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
       crossorigin="anonymous"
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
-    
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&display=swap"
+      rel="stylesheet"
+    />
+
     <link rel="stylesheet" href="src/styles.css" />
-    
+
     <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
   </head>
 
   <body>
     <div class="container">
-      
       <div class="weather-app-wrapper">
-        
         <div class="weather-app">
           <form id="search-form">
             <div class="row">
@@ -37,96 +38,66 @@
                 />
               </div>
               <div class="col-3">
-                <input class="form-control btn btn-primary shadow-sm w-100" type="submit" value="SEARCH" />
+                <input
+                  class="form-control btn btn-primary shadow-sm w-100"
+                  type="submit"
+                  value="SEARCH"
+                />
               </div>
               <div class="col-3">
                 <button class="btn btn-success w-100" id="current-location">
                   Current City
                 </button>
-                
-              </div> 
+              </div>
             </div>
           </form>
           <div class="row">
             <div class="col-6">
-              
               <h1 id="current-city"></h1>
               <ul>
-                <li>
-                  
-                </li>
-                <li>
-                  
-                </li>
+                <li></li>
+                <li></li>
               </ul>
               <div class="row">
                 <div class="col-6">
                   <div class="d-flex weather-temperature">
-                   <img src="https://openweathermap.org/img/wn/@2x.png" 
-                    alt="Clear"
-                    id="icon"
+                    <img
+                      src="https://openweathermap.org/img/wn/02@2x.png"
+                      alt="Clear"
+                      id="icon"
                     />
-                   <div class="float-left">
-                    <strong class="currentTemp" id="current-temp"></strong
-                    ><span class="units"><a href="#" id="fahrenheit-link">°F</a>
-                     | <a href="#" id="celsius-link">°C</a></span>
-                    
-                   </div>
-          
-                    
-                  </div>  
-                   
+                    <div class="float-left">
+                      <strong class="currentTemp" id="current-temp"></strong
+                      ><span class="units"
+                        ><a href="#" id="fahrenheit-link">°F</a> |
+                        <a href="#" id="celsius-link">°C</a></span
+                      >
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
             <div class="col-6 details">
               <ul>
-                <li id="feels-like">
-                </li>
+                <li id="feels-like"></li>
 
-                
-                  
-                  
-                
-                <li id="humidity">
-                  
-                </li>
-                <li id="wind-speed">
-                  
-                </li>
-                <li id="description">
-
-                </li>
+                <li id="humidity"></li>
+                <li id="wind-speed"></li>
+                <li id="description"></li>
               </ul>
             </div>
-            <div class="weather-forecast" id="forecast">
-              
-              <div class="row">
-                <div class="col-2">
-                  <div class="forecast-date">
-                    Sat
-                    <img src="https://openweathermap.org/img/wn/10d@2x.png"
-                     alt="" width="52"/>
-                  </div>
-                  
-                  <div class="forecast-temp">
-                    <span class="forecast-temp-max"><strong>43°</strong></span>
-                    <span class="forecast-temp-min">33°</span>
-                  </div>
-                </div>
-                
-               </div>
-            </div>
+            <div class="weather-forecast" id="forecast"></div>
           </div>
         </div>
       </div>
       <div>
-        <a href="https://github.com/InkedGirlNTecH34/Weather-App-Final-project">Open-source code</a> by Meagan Hollingsworth
+        <a href="https://github.com/InkedGirlNTecH34/Weather-App-Final-project"
+          >Open-source code</a
+        >
+        by Meagan Hollingsworth
       </div>
     </div>
-    
-      
-    
+
     <script src="src/script.js"></script>
   </body>
 </html>
