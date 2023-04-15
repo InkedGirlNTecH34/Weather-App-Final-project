@@ -25,7 +25,8 @@
     <div class="container">
       <div class="weather-app-wrapper">
         <div class="weather-app">
-          <form id="search-form">
+          <div class="overview">
+           <form id="search-form">
             <div class="row">
               <div class="col-6">
                 <input
@@ -50,7 +51,8 @@
                 </button>
               </div>
             </div>
-          </form>
+           </form>
+          </div>
           <div class="row">
             <div class="col-6">
               <h1 id="current-city"></h1>
@@ -66,7 +68,7 @@
                       alt="Clear"
                       id="icon"
                     />
-                    <div class="float-left">
+                    <div>
                       <strong class="currentTemp" id="current-temp"></strong
                       ><span class="units"
                         ><a href="#" id="fahrenheit-link">°F</a> 
@@ -91,10 +93,12 @@
         </div>
       </div>
       <div>
-        <a href="https://github.com/InkedGirlNTecH34/Weather-App-Final-project"
+        <small>
+         <a href="https://github.com/InkedGirlNTecH34/Weather-App-Final-project"
           >Open-source code</a
-        >
-        by Meagan Hollingsworth
+         >
+         by Meagan Hollingsworth
+        </small>
       </div>
     </div>
 
